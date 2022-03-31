@@ -1,0 +1,92 @@
+@media (min-width: 768px) {
+  .hum {
+    display: none;
+  }
+  nav {
+    position: static !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    top: 0 !important;
+    z-index: 2 !important;
+    background-color: white !important;
+    visibility: visible !important;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .intro p {
+    max-width: 600px;
+  }
+  footer .up {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .up .right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 930px) {
+  body {
+    font-size: 18px;
+  }
+  header {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .aboutMe {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .aboutMe .up p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutMe .down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutMe .down .left {
+    width: 50%;
+  }
+  .aboutMe .down .left P {
+    width: 70%;
+    text-align: left;
+  }
+  .aboutMe .down .right {
+    width: 50%;
+  }
+  .contact {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin: auto;
+  }
+  .contact .formCon {
+    max-width: 930px;
+    margin: auto;
+  }
+  footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  .aboutMe .up p {
+    width: 50%;
+  }
+  .aboutMe .down {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+/*# sourceMappingURL=media.css.map */
