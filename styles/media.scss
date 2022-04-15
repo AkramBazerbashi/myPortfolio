@@ -92,6 +92,30 @@
         padding-left: 5vw;
         padding-right: 5vw;
     }
+
+    .projects {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        .content {
+            flex-direction: row;
+            margin-top: 3em;
+
+            .text {
+            top: 0px;
+            right: -40px;
+            width: 100%;
+            max-width: 50%;
+            }
+        }
+
+        .image {
+            img {
+                max-width: 500px !important;
+                width: 500px !important;
+                height: 300px;
+            }
+        }
+    }
 }
 
 @media (min-width: 1100px){
@@ -108,5 +132,14 @@
             padding-right: 5vw;
         }
         
+    }
+
+    .projects {
+        .image {
+            img {
+                max-width: 700px !important;
+                width: 700px !important;
+            }
+        }
     }
 }

@@ -600,6 +600,103 @@ header div.burger.toggled > div::after {
   top: 10px;
 }
 
+.projects .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .content .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: auto;
+  -webkit-box-shadow: black 0 0px 18px 0;
+          box-shadow: black 0 0px 18px 0;
+  position: relative;
+  z-index: 2;
+  top: 20px;
+  background-color: rgba(243, 243, 243, 0.8);
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.projects .content .text h3, .projects .content .text p {
+  margin-block: 0;
+  text-align: center;
+}
+
+.projects .content .text p:first-of-type {
+  margin-block: 1em;
+}
+
+.projects .content .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.projects .content .image img {
+  max-width: 100%;
+}
+
+.projects .content .image .view {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+.projects .content .image .view a {
+  width: 100px;
+  display: block;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 40px;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+
+.projects .content .image .view:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.projects .content .image .view:hover a {
+  background-color: black;
+  color: white;
+}
+
 .contact {
   padding: 2em;
   background-color: #F3F3F3;
