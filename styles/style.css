@@ -78,13 +78,6 @@ header .logo {
   z-index: 2;
 }
 
-header .logo img {
-  max-width: 100%;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-}
-
 header .logo h2 {
   text-indent: 10px;
 }
@@ -244,7 +237,28 @@ header div.burger.toggled > div::after {
 
 .hero {
   background-color: #F3F3F3;
-  padding-top: 4em;
+  padding-top: 2em;
+}
+
+.hero .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .content .image {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  text-align: center;
+}
+
+.hero .content .image img {
+  width: 55%;
 }
 
 .intro {

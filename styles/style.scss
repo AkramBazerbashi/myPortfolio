@@ -97,13 +97,6 @@ header {
         justify-content: center;
         z-index: 2;
 
-        img {
-            max-width: 100%;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            
-        }
 
         h2 {
             text-indent: 10px;
@@ -238,7 +231,21 @@ header {
 
 .hero {
     background-color: $color1;
-    padding-top: 4em;
+    padding-top: 2em;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        .image {
+            order: -1;
+            text-align: center;
+
+            img {
+                width: 55%;
+            }
+        }
+    }
 }
 
 .intro {
