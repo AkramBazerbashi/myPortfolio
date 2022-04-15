@@ -109,6 +109,9 @@
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .hero .content .intro {
+    padding-left: 5vw;
+  }
   .hero .content .image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;

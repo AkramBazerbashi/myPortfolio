@@ -121,6 +121,9 @@
         padding-top: 4em;
         .content {
             flex-direction: row;
+            .intro {
+                padding-left: 5vw
+            }
             .image {
                 order: 1;
                 img {
