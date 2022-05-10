@@ -996,4 +996,8 @@ footer .down p a {
 .arrow-hide {
   visibility: hidden;
 }
+
+.sql {
+  max-width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
