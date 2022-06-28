@@ -584,13 +584,15 @@ header div.burger.toggled > div::after {
 }
 
 .aboutMe .skills ul li:nth-child(2) img,
-.aboutMe .skills ul li:nth-child(7) img {
+.aboutMe .skills ul li:nth-child(5) img,
+.aboutMe .skills ul li:nth-child(8) img {
   width: 48px;
   height: 48px;
 }
 
 .aboutMe .skills ul li:nth-child(2) p,
-.aboutMe .skills ul li:nth-child(7) p {
+.aboutMe .skills ul li:nth-child(5) p,
+.aboutMe .skills ul li:nth-child(8) p {
   margin-top: 20px;
   margin-bottom: 20px;
 }

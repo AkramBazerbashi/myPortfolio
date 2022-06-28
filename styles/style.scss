@@ -489,12 +489,14 @@ header {
             }
         }
         li:nth-child(2) img,
-        li:nth-child(7) img {
+        li:nth-child(5) img, 
+        li:nth-child(8) img {
             width: 48px;
             height: 48px;
         }
         li:nth-child(2) p,
-        li:nth-child(7) p {
+        li:nth-child(5) p,
+        li:nth-child(8) p {
             margin-top: 20px;
             margin-bottom: 20px;
         }
