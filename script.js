@@ -220,3 +220,21 @@ window.addEventListener('scroll', () => {
 
     lastScroll = curScroll;
 });
+
+
+
+
+const front = document.getElementById('front');
+const back = document.getElementById('back');
+const frontList = document.getElementById('frontList');
+const backList = document.getElementById('backList');
+
+front.addEventListener('click',()=>{
+    frontList.style.display= "flex";
+    backList.style.display= "none";
+})
+
+back.addEventListener('click',()=>{
+    backList.style.display= "flex";
+    frontList.style.display= "none";
+})

@@ -459,7 +459,7 @@ header {
         color: white;
     }
 
-    .skills ul{
+    .skills ul#frontList{
         display: flex;
         flex-wrap: wrap;
         padding-left: 0px;
@@ -506,6 +506,70 @@ header {
         }
         
     }
+    .skills ul#backList{
+        display: none;
+        flex-wrap: wrap;
+        padding-left: 0px;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin: auto;
+            width: 100px;
+            padding: $px-1x;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: rgba(black, 0.66) 0 0px 18px 0;
+
+            
+
+            p {
+                width: fit-content;
+            }
+
+            svg+p {
+                margin-top: 20px; 
+                margin-bottom: 20px;
+            }
+        }
+        li:nth-child(1) img,
+        li:nth-child(2) img, 
+        li:nth-child(3) img,
+        li:nth-child(4) img {
+            width: 48px;
+            height: 48px;
+        }
+        li:nth-child(1) p,
+        li:nth-child(2) p,
+        li:nth-child(3) p,
+        li:nth-child(4) p{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .skills button#front, .skills button#back{
+        display: inline-block;
+        width: fit-content;
+
+        padding: $py-1x;
+        border: 1px solid black;
+        border-radius: 40px;
+        color: black;
+        font-weight: bold;
+        font-size: $fs-no;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+
+        &:hover{
+            color: white;
+            background-color: black;
+        }
+    }
+        
 }
 
 // ############# Projects #####################
