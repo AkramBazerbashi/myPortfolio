@@ -209,6 +209,7 @@ const header = document.getElementById('home');
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
+    
     const curScroll = window.scrollY;
 
     if (curScroll > lastScroll && window.scrollY > 100 && !header.classList.contains('scrollDown')) {
