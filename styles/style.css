@@ -583,20 +583,20 @@ header div.burger.toggled > div::after {
   margin-bottom: 20px;
 }
 
-.aboutMe .skills ul#frontList li:nth-child(2) img,
+/* .aboutMe .skills ul#frontList li:nth-child(2) img,
 .aboutMe .skills ul#frontList li:nth-child(5) img,
 .aboutMe .skills ul#frontList li:nth-child(8) img,
 .aboutMe .skills ul#frontList li:nth-child(10) img,
 .aboutMe .skills ul#frontList li:nth-child(11) img {
   width: 48px;
   height: 48px;
-}
+} */
 
-.aboutMe .skills ul#frontList li:nth-child(2) p,
-.aboutMe .skills ul#frontList li:nth-child(5) p,
-.aboutMe .skills ul#frontList li:nth-child(8) p,
-.aboutMe .skills ul#frontList li:nth-child(10) p,
-.aboutMe .skills ul#frontList li:nth-child(11) p {
+.aboutMe .skills ul#frontList li:nth-child(1) p,
+.aboutMe .skills ul#frontList li:nth-child(3) p,
+/* .aboutMe .skills ul#frontList li:nth-child(8) p, */
+/* .aboutMe .skills ul#frontList li:nth-child(10) p, */
+.aboutMe .skills ul#frontList li:nth-child(4) p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -645,13 +645,13 @@ header div.burger.toggled > div::after {
   margin-bottom: 20px;
 }
 
-.aboutMe .skills ul#backList li:nth-child(1) img,
+/* .aboutMe .skills ul#backList li:nth-child(1) img,
 .aboutMe .skills ul#backList li:nth-child(2) img,
 .aboutMe .skills ul#backList li:nth-child(3) img,
 .aboutMe .skills ul#backList li:nth-child(4) img {
   width: 48px;
   height: 48px;
-}
+} */
 
 .aboutMe .skills ul#backList li:nth-child(1) p,
 .aboutMe .skills ul#backList li:nth-child(2) p,
