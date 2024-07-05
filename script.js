@@ -6,7 +6,7 @@ const arrow = document.querySelector(".arrow");
 const hero = document.getElementById("heroAnch");
 const aboutMe = document.getElementById("aboutMeAnch");
 const projects = document.getElementById("projectsAnch");
-const contact = document.getElementById("contactAnch");
+// const contact = document.getElementById("contactAnch");
 
 burger.addEventListener('click', function () {
     burger.classList.toggle('toggled');
@@ -54,11 +54,11 @@ document.addEventListener('scroll', function () {
 const underline1 = document.querySelector('.underline1');
 const underline2 = document.querySelector('.underline2');
 const underline3 = document.querySelector('.underline3');
-const underline4 = document.querySelector('.underline4');
+// const underline4 = document.querySelector('.underline4');
 const heroAnch = document.getElementById('heroAnch');
 const aboutMeAnch = document.getElementById('aboutMeAnch');
 const projectsAnch = document.getElementById('projectsAnch');
-const contactAnch = document.getElementById('contactAnch');
+// const contactAnch = document.getElementById('contactAnch');
 
 let heroIsSelected = false;
 let aboutmeIsSelected = false;
@@ -104,18 +104,18 @@ projectsAnch.addEventListener('mouseout', () => {
 
 })
 
-contactAnch.addEventListener('mouseover', () => {
-    underline4.firstElementChild.firstElementChild.classList.add('active');
-    underline4.lastElementChild.firstElementChild.classList.add('active');
-})
+// contactAnch.addEventListener('mouseover', () => {
+//     underline4.firstElementChild.firstElementChild.classList.add('active');
+//     underline4.lastElementChild.firstElementChild.classList.add('active');
+// })
 
-contactAnch.addEventListener('mouseout', () => {
-    if (!contactIsSelected) {
-        underline4.firstElementChild.firstElementChild.classList.remove('active');
-        underline4.lastElementChild.firstElementChild.classList.remove('active');
-    }
+// contactAnch.addEventListener('mouseout', () => {
+//     if (!contactIsSelected) {
+//         underline4.firstElementChild.firstElementChild.classList.remove('active');
+//         underline4.lastElementChild.firstElementChild.classList.remove('active');
+//     }
 
-})
+// })
 
 
 
@@ -140,8 +140,8 @@ window.addEventListener('scroll', () => {
         underline2.lastElementChild.firstElementChild.classList.remove('active');
         underline3.firstElementChild.firstElementChild.classList.remove('active');
         underline3.lastElementChild.firstElementChild.classList.remove('active');
-        underline4.firstElementChild.firstElementChild.classList.remove('active');
-        underline4.lastElementChild.firstElementChild.classList.remove('active');
+        // underline4.firstElementChild.firstElementChild.classList.remove('active');
+        // underline4.lastElementChild.firstElementChild.classList.remove('active');
     }
 });
 
@@ -157,8 +157,8 @@ window.addEventListener('scroll', () => {
         underline2.lastElementChild.firstElementChild.classList.add('active');
         underline3.firstElementChild.firstElementChild.classList.remove('active');
         underline3.lastElementChild.firstElementChild.classList.remove('active');
-        underline4.firstElementChild.firstElementChild.classList.remove('active');
-        underline4.lastElementChild.firstElementChild.classList.remove('active');
+        // underline4.firstElementChild.firstElementChild.classList.remove('active');
+        // underline4.lastElementChild.firstElementChild.classList.remove('active');
 
     }
 });
@@ -175,8 +175,8 @@ window.addEventListener('scroll', () => {
         underline2.lastElementChild.firstElementChild.classList.remove('active');
         underline3.firstElementChild.firstElementChild.classList.add('active');
         underline3.lastElementChild.firstElementChild.classList.add('active');
-        underline4.firstElementChild.firstElementChild.classList.remove('active');
-        underline4.lastElementChild.firstElementChild.classList.remove('active');
+        // underline4.firstElementChild.firstElementChild.classList.remove('active');
+        // underline4.lastElementChild.firstElementChild.classList.remove('active');
     }
 });
 
@@ -192,8 +192,8 @@ window.addEventListener('scroll', () => {
         underline2.lastElementChild.firstElementChild.classList.remove('active');
         underline3.firstElementChild.firstElementChild.classList.remove('active');
         underline3.lastElementChild.firstElementChild.classList.remove('active');
-        underline4.firstElementChild.firstElementChild.classList.add('active');
-        underline4.lastElementChild.firstElementChild.classList.add('active');
+        // underline4.firstElementChild.firstElementChild.classList.add('active');
+        // underline4.lastElementChild.firstElementChild.classList.add('active');
     }
 });
 
@@ -230,12 +230,28 @@ const back = document.getElementById('back');
 const frontList = document.getElementById('frontList');
 const backList = document.getElementById('backList');
 
-front.addEventListener('click',()=>{
+front.addEventListener('click',(event)=>{
     frontList.style.display= "flex";
     backList.style.display= "none";
+
+    console.log("event", event)
+    var stacks= document.getElementsByClassName("stack");
+    var activeStack= document.getElementById(event.target.id);
+    Array.from(stacks).forEach(stack => {
+        stack.classList.remove("activeStack");
+    });
+    activeStack.classList.add("activeStack");
 })
 
-back.addEventListener('click',()=>{
+back.addEventListener('click',(event)=>{
     backList.style.display= "flex";
     frontList.style.display= "none";
+
+    console.log("event", event)
+    var stacks= document.getElementsByClassName("stack");
+    var activeStack= document.getElementById(event.target.id);
+    Array.from(stacks).forEach(stack => {
+        stack.classList.remove("activeStack");
+    });
+    activeStack.classList.add("activeStack");
 })

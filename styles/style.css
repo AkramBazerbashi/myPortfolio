@@ -1089,3 +1089,8 @@ footer .down p a {
   max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
+
+.activeStack{
+  color: white !important;
+  background-color: black;
+}

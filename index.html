@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akram Bazerbashi</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/media.css">
     <link rel="stylesheet" href="styles/fontAwesome/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -128,57 +129,58 @@
                 </div>
                 <div class="skills right">
                     <h3 data-aos="fade-up" data-aos-duration="1000">My Skills</h3>
-                    <button id="front">Front-End Developer</button>
-                    <button id="back" >Back-End Developer</button>
+                    <button id="front" class="stack activeStack">Front-End</button>
+                    <button id="back" class="stack">Back-End</button>
                     <ul id="frontList">
                         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                            <img src="images/PUGJS.png" alt="" width="48px" height="48px">
-                            <p>PUGJS</p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
-                            <i class="fa-brands fa-sass fa-3x"></i>
-                            <p>SCSS</p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                            <img src="images/tailwind.png " alt="" width="48px" height="48px">
-                            <p>Tailwind</p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
-                            <i class="fa-brands fa-bootstrap fa-3x"></i>
-                            <p>BOOTSTRAP</p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            <i class="fa-brands fa-js fa-3x"></i>
-                            <p>Javascript</p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
-                            <img src="images/typescript.png " alt="" width="48px" height="48px">
-                            <p>Typescript</p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                             <i class="fa-brands fa-angular fa-3x"></i>
                             <p>ANGULAR</p>
                         </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
                             <i class="fa-brands fa-angular fa-3x"></i>
                             <p>Material UI</p>
                         </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                             <i class="fa-brands fa-angular fa-3x"></i>
                             <p>Nebular</p>
                         </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="550">
-                            <img src="images/redux.png " alt="" width="48px" height="48px">
-                            <p>NgRx</p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
                             <img src="images/seo.jpg " alt="" width="48px" height="48px">
                             <p>SEO</p>
                         </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="650">
+                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                             <img src="images/seo.jpg " alt="" width="48px" height="48px">
                             <p>SSR</p>
                         </li>
+                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                            <img src="images/redux.png " alt="" width="48px" height="48px">
+                            <p>NgRx</p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            <img src="images/PUGJS.png" alt="" width="48px" height="48px">
+                            <p>PUGJS</p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+                            <i class="fa-brands fa-sass fa-3x"></i>
+                            <p>SCSS</p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            <img src="images/tailwind.png " alt="" width="48px" height="48px">
+                            <p>Tailwind</p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="550">
+                            <i class="fa-brands fa-bootstrap fa-3x"></i>
+                            <p>BOOTSTRAP</p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                            <i class="fa-brands fa-js fa-3x"></i>
+                            <p>Javascript</p>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="650">
+                            <img src="images/typescript.png " alt="" width="48px" height="48px">
+                            <p>Typescript</p>
+                        </li>
+                        
                         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
                             <img src="images/cy.png" alt="" width="48px" height="48px">
                             <p>CYPRESS</p>
@@ -268,8 +270,22 @@
             <h2>PROJECTS</h2>
             <div class="content">
                 <div class="text">
+                    <h3>Turkey Luxury Clinics</h3>
+                    <p>A Turkey medical team specialized in providing medical care at all levels, and supportive in facilitating Before and after treatment procedures and arrangements, and a bridge that achieves understanding and communication between Turkish doctors And customers by removing the language barrier and whatever difficulties there are!</p>
+                    <p>Angular SEO SSR Hydration Standalone Zoneless EsBuild Brotli NgRx Sass ASP.NET SQL-Server Zoho Hostinger SmarterASP</p>
+                </div>
+                <div class="image">
+                    <img src="images/turkeyLuxuryClinics.webp" alt="">
+                    <div class="view">
+                        <a href="https://turkeyluxuryclinics.com/en/home" target="_blank"><i
+                                class="fa-solid fa-eye fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="text">
                     <h3>Riyadh Third Health Cluster</h3>
-                    <p>A saudi health cluster website that show the services provided by the cluster and information about the cluster.</p>
+                    <p>A Saudi health cluster website that show the services provided by the cluster and information about the cluster.</p>
                     <p>Angular NgRx Sass ASP.NET SQL-Server WhatsApp-API Hostinger SmarterASP</p>
                 </div>
                 <div class="image">
@@ -297,7 +313,7 @@
             <div class="content">
                 <div class="text">
                     <h3>Dm Oid</h3>
-                    <p>A saudi e-commerce website for selling perfumes.</p>
+                    <p>A Saudi e-commerce website for selling perfumes.</p>
                     <p>Angular NgRx Sass ASP.NET SQL-Server Hostinger SmarterASP</p>
                 </div>
                 <div class="image">

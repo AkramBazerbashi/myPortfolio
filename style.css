@@ -683,6 +683,8 @@ header div.burger.toggled > div::after {
   background-color: black;
 }
 
+
+
 .projects {
   padding: 2em;
   background-color: #F3F3F3;
@@ -1089,3 +1091,7 @@ footer .down p a {
   max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
+.activeStack{
+  color: white !important;
+  background-color: black;
+}
